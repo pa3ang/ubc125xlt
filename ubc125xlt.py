@@ -194,12 +194,13 @@ def statistics (stopped):
 
 def send_telegram ():
     global current_channel
-    # input here your telegram bot token 
+    # input here your telegram bot token   bot_id:bot_passphrase
     bot = telegram.Bot('54xxxx895:AAHaMNyxxxxxxxxxxxxxLUTMfOxaZf6dCz0')
     # store the channel number(s) of the ones you want to receive an alarm through telegram in the alarm_channels array
     # send your message to the right telegram id
     alarm_channels  = ['51','53','101','112','135','136','151','157']
     if current_channel[11] in alarm_channels:
+        # input here your chat_id
         bot.sendMessage(2xxxxxx764, 'ubc125xlt: '+current_channel[7])
 
 def truncate_file ():
