@@ -50,7 +50,7 @@ SERIAL_PORT = "/dev/ttyACM0"
 # Serial port settings
 SERIAL_SPEED    = 115200
 SERIAL_STOPBITS = serial.STOPBITS_TWO
-SERIAL_TIMEOUT  = 1.0
+SERIAL_TIMEOUT  = .05
 
 # Global variables
 previous_channel = '0'
